@@ -1,0 +1,164 @@
+/* Подключение комнонентов */
+@import './components/header.css';
+@import './components/footer.css';
+
+/* стили секций  */
+@import './hero.css';
+@import './about.css';
+@import './projects-us.css';
+@import './contacts.css';
+
+/* Responsive */
+@import './responsive.css';
+
+/* сброс настроек браузерных стилей */
+*,
+::before,
+::after,
+::backdrop,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+
+ol,
+ul {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+:focus {
+  outline: none;
+}
+
+/* Настраиваем базовые заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* wrapper */
+
+.wrapper {
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0 0;
+  width: 100%;
+}
+
+/* container */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0;
+}
+
+.logo {
+  font-size: clamp(16px, 14.00px + 0.63vw, 26px);
+  /* 16px, viewport: 320px -> 26px, viewport: 1920px */
+  font-weight: 600;
+  color: #250a0aaa;
+
+}
+
+.title {
+  font-size: clamp(30px, 26.00px + 1.25vw, 50px);
+  /* 30px, viewport: 320px -> 50px, viewport: 1920px */
+  color: #250a0a;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+}

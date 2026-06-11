@@ -1,0 +1,23 @@
+.about { 
+   padding: 150px 0 150px 0;
+}
+
+.about .about__container { 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+.about__description { 
+    font-size: clamp(18px, 15.60px + 0.75vw, 30px);
+/* 18px, viewport: 320px -> 30px, viewport: 1920px */
+    text-wrap: wrap;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about__description span { 
+    font-weight: 600;
+}

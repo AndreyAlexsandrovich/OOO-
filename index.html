@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- main style -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>ООО "КРОФАСС"</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header bg-orange-400">
+            <div class="container">
+                <div class="flex">
+                    <a href="#!" class="header__logo logo">ООО "КРОФАСС"</a>
+
+                    <button class="burger" id="burgerBtn" aria-label="Меню">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </button>
+
+                    <nav class="nav" id="nav">
+                        <ul class="header__list">
+                            <li class="header__list-item">
+                                <a href="#About" class="header__list-item-link">О нас</a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="#Projects" class="header__list-item-link">Наши работы</a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="#Contacts" class="header__list-item-link">Контакты</a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="tel:+79304110969" class="header__list-item-link phone">+7 (930)-411-09-69</a>
+                            </li>
+                            <li class="header__list-item">
+                                <!-- Кнопка для открытия модального окна. data-bs-target должен совпадать с id окна -->
+                                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                    data-bs-target="#orderModal">
+                                    Оставить заявку
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__container">
+                        <h1 class="hero__title">
+                            ООО <span class="bg-orange-400"> «КРОФАСС»</span>
+                        </h1>
+                        <p class="hero__subtitle">
+                            самая <span class="bg-orange-400">лучшая компания</span> по производству и <br> монтажу
+                            фальцевой <span class="bg-orange-400">кровли в нашем
+                                городе!</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="About">
+                <div class="container">
+                    <div class="about__container">
+                        <h2 class="about__title title">О НАС</h2>
+                        <p class="about__description">
+                            <span>ООО «КРОФАСС»</span> — самая лучшая компания по производству и монтажу фальцевой
+                            кровли в нашем
+                            городе! Обратившись к нам, вы будете довольны!
+                            Эксклюзив, качество, честность залог Нашего успеха!
+                            Кровельные и Фасадные Системы мы начинаем принимать заказы!
+                            Мы работаем с самыми качественными кровельными материалами!
+                            ООО «КРОФАСС» – цена оправдывает качество!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="projects-us" id="Projects">
+                <div class="container">
+                    <div class="projects-us__container">
+                        <h2 class="projects-us__title title">Наши работы:</h2>
+                        <div class="projects-us__card-container">
+                            <ul class="projects-us__card-list">
+                                <li class="projects-us__card-item">
+                                    <article class="projects-us__card-box">
+                                        <img src="./images/projects-image/1.png" alt="проект"
+                                            class="projects-us__image">
+                                        <div class="projects-us__card-overlay">
+                                            <h3 class="projects-us__card-title">Проект 1</h3>
+                                            <p class="projects-us__card-description">Описания проекта</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="projects-us__card-item">
+                                    <article class="projects-us__card-box">
+                                        <img src="./images/projects-image/2.png" alt="проект"
+                                            class="projects-us__image">
+                                        <div class="projects-us__card-overlay">
+                                            <h3 class="projects-us__card-title">Проект 2</h3>
+                                            <p class="projects-us__card-description">Описания проекта</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="projects-us__card-item">
+                                    <article class="projects-us__card-box">
+                                        <img src="./images/projects-image/3.png" alt="проект"
+                                            class="projects-us__image">
+                                        <div class="projects-us__card-overlay">
+                                            <h3 class="projects-us__card-title">Проект 3</h3>
+                                            <p class="projects-us__card-description">Описания проекта</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="projects-us__card-item">
+                                    <article class="projects-us__card-box">
+                                        <img src="./images/projects-image/4.png" alt="проект"
+                                            class="projects-us__image">
+                                        <div class="projects-us__card-overlay">
+                                            <h3 class="projects-us__card-title">Проект 4</h3>
+                                            <p class="projects-us__card-description">Описания проекта</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts" id="Contacts">
+                <div class="container">
+                    <h3 class="contacts__title title">
+                        Заполни заявку для связи с нами:
+                    </h3>
+                    <form class="row g-3">
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Эл.почта:</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Адрес</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="...">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Номер телефона</label>
+                            <input type="phone" class="form-control" id="inputAddress2" placeholder="+7">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputCity" class="form-label">Город</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </div>
+                    </form>
+            </section>
+        </main>
+        <footer class="footer bg-orange-400">
+            <div class="container">
+                <div class="flex">
+                    <a href="#!" class="footer__logo logo">ООО "КРОФАСС"</a>
+                    <a href="#!" class="footer__politicy">Политика Конфиденциальности</a>
+                    <div class="footer__contacts-social">
+                        <p  class="social__vk social">
+                            Мы в <a href="#!">  <span>Вконтакте</span>
+                            </a>
+                        </p>
+                        <p class="social__max social">
+                            Написать в <a href="#!"> <span class="text-orange">Max</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="orderModalLabel">Оставить заявку</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Эл. адрес</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Адрес</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Проспект Ленина">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Номер телефона для связи</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="+7">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputCity" class="form-label">Город</label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="Брянск">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burger = document.querySelector('#burgerBtn');
+            const nav = document.querySelector('.nav');
+
+            const overlay = document.createElement('div');
+            overlay.className = 'overlay';
+            document.body.appendChild(overlay);
+
+            function toggleMenu() {
+                burger.classList.toggle('active');
+                nav.classList.toggle('active');
+                overlay.classList.toggle('active');
+
+                if (nav.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            }
+
+            burger.addEventListener('click', toggleMenu);
+            overlay.addEventListener('click', toggleMenu);
+
+            const links = document.querySelectorAll('.header__list-item-link');
+            links.forEach(link => {
+                link.addEventListener('click', function () {
+                    if (nav.classList.contains('active')) {
+                        toggleMenu();
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
