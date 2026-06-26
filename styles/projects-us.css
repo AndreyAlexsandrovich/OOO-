@@ -1,46 +1,48 @@
-.projects-us { 
-    padding: 150px 0  150px 0;
+.projects-us {
+    padding: 150px 0 150px 0;
 }
 
-.projects-us .projects-us__container { 
+.projects-us .projects-us__container {
     text-align: center;
 }
 
-.projects-us .projects-us__container .projects-us__title  { 
+.projects-us .projects-us__container .projects-us__title {
     padding: 0 0 30px 0;
 }
 
-.projects-us .projects-us__card-container .projects-us__card-list { 
+.projects-us .projects-us__card-list {
     display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+     grid-auto-rows: 1fr;
     gap: 10px;
 }
 
-.projects-us .projects-us__card-container .projects-us__card-list .projects-us__card-item .projects-us__card-box { 
+.projects-us .projects-us__card-container .projects-us__card-list .projects-us__card-item .projects-us__card-box {
     max-width: 100%;
+    height: 100%;
     cursor: pointer;
 }
 
-.projects-us .projects-us__card-container .projects-us__card-list .projects-us__card-item .projects-us__card-box img { 
+.projects-us .projects-us__card-container .projects-us__card-list .projects-us__card-item .projects-us__card-box img {
     max-width: 100%;
 }
 
 /* эффект ховера*/
 
-.projects-us__card-box { 
+.projects-us__card-box {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
 }
 
-.projects-us__card-box img { 
+.projects-us__card-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
 
-.projects-us__card-box:hover img { 
+.projects-us__card-box:hover img {
     transform: scale(1.1);
 }
 
@@ -52,7 +54,7 @@
     padding: 20px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     color: white;
-    transform: translateY(100%);  
+    transform: translateY(100%);
     transition: transform 0.4s ease;
 }
 
