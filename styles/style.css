@@ -162,3 +162,23 @@ body {
   margin-bottom: 0;
   text-align: center;
 }
+
+.btn-primary { 
+  border: #000 solid 1px;
+}
+
+.btn-primary:hover { 
+  background-color:  orange;
+  color: #000;
+    border: #000 solid 1px;
+}
+
+.btn-secondary { 
+  border: #000 solid 1px;
+}
+
+.btn-secondary:hover { 
+  background-color:  orange;
+  color: #000;
+    border: #000 solid 1px;
+}

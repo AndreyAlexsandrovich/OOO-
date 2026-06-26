@@ -148,27 +148,28 @@
                     <h3 class="contacts__title title">
                         Заполни заявку для связи с нами:
                     </h3>
-                    <form class="row g-3">
+                    <form class="row g-3" id="formPage">
                         <div class="col-md-12">
-                            <label for="inputEmail4" class="form-label">Эл.почта:</label>
-                            <input type="email" class="form-control" id="inputEmail4">
+                            <label for="inputEmail4" class="form-label">Эл. адрес</label>
+                            <input type="email" class="form-control" id="inputEmailPage">
                         </div>
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">Адрес</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="...">
+                            <input type="text" class="form-control" id="inputAddressPage" placeholder="Проспект Ленина">
                         </div>
                         <div class="col-12">
-                            <label for="inputAddress2" class="form-label">Номер телефона</label>
-                            <input type="phone" class="form-control" id="inputAddress2" placeholder="+7">
+                            <label for="inputAddress2" class="form-label">Номер телефона для связи</label>
+                            <input type="text" class="form-control" id="inputPhonePage" placeholder="+7">
                         </div>
                         <div class="col-md-12">
                             <label for="inputCity" class="form-label">Город</label>
-                            <input type="text" class="form-control" id="inputCity">
+                            <input type="text" class="form-control" id="inputCityPage" placeholder="Брянск">
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Отправить</button>
                         </div>
                     </form>
+                    <div class="text-error-page"></div>
             </section>
         </main>
         <footer class="footer bg-orange-400">
@@ -177,8 +178,8 @@
                     <a href="#!" class="footer__logo logo">ООО "КРОФАСС"</a>
                     <a href="#!" class="footer__politicy">Политика Конфиденциальности</a>
                     <div class="footer__contacts-social">
-                        <p  class="social__vk social">
-                            Мы в <a href="#!">  <span>Вконтакте</span>
+                        <p class="social__vk social">
+                            Мы в <a href="#!"> <span>Вконтакте</span>
                             </a>
                         </p>
                         <p class="social__max social">
@@ -199,27 +200,28 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="row g-3">
+                    <form class="row g-3" id="formModal">
                         <div class="col-md-12">
                             <label for="inputEmail4" class="form-label">Эл. адрес</label>
-                            <input type="email" class="form-control" id="inputEmail4">
+                            <input type="email" class="form-control" id="inputEmailModal">
                         </div>
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">Адрес</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Проспект Ленина">
+                            <input type="text" class="form-control" id="inputAddressModal" placeholder="Проспект Ленина">
                         </div>
                         <div class="col-12">
                             <label for="inputAddress2" class="form-label">Номер телефона для связи</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="+7">
+                            <input type="text" class="form-control" id="inputPhoneModal" placeholder="+7">
                         </div>
                         <div class="col-md-12">
                             <label for="inputCity" class="form-label">Город</label>
-                            <input type="text" class="form-control" id="inputCity" placeholder="Брянск">
+                            <input type="text" class="form-control" id="inputCityModal" placeholder="Брянск">
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Отправить</button>
                         </div>
                     </form>
+                    <div class="text-error-modal"></div>
                 </div>
 
                 <div class="modal-footer">
@@ -269,6 +271,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="JS/index.js" type="module"></script>
 </body>
 
 </html>

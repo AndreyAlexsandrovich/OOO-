@@ -96,4 +96,8 @@
       flex-direction: column;
       gap: 15px;
    }
+
+   .contacts { 
+      padding: 10px 15px;
+   }
 }
