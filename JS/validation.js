@@ -37,20 +37,23 @@ export const validationForm = () => {
         if (!email) {
             showError('Эл.почта', container);
             emailInput.style.border = 'red solid 2px'
-        }
+        };
+
         if (!address) {
             showError('Адрес', container);
             addressInput.style.border = 'red solid 2px'
         };
+
         if (!phone) {
             showError('Номер телефона', container)
             phoneInput.style.border = 'red solid 2px'
 
         };
+
         if (!city) {
             showError('Город', container);
             cityInput.style.border = 'red solid 2px'
-        }
+        };
 
         const inputs = [emailInput, addressInput, phoneInput, cityInput]
         setTimeout(() => {
