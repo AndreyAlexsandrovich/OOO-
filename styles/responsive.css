@@ -64,40 +64,48 @@
       text-align: center;
    }
 
- .about { 
-   padding: 150px 15px;
- }
+   .about {
+      padding: 150px 15px;
+   }
 
- .about__description { 
-   text-align: center;
- }
-
-   .title { 
+   .about__description {
       text-align: center;
    }
 
-   .projects-us { 
-        padding: 150px 15px;
+   .title {
+      text-align: center;
+   }
+
+   .projects-us {
+      padding: 150px 15px;
    }
 
 
-   .projects-us .projects-us__card-container .projects-us__card-list { 
+   .projects-us .projects-us__card-container .projects-us__card-list {
       grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
       text-align: center;
       justify-content: center;
-     padding-left: 0;
+      padding-left: 0;
    }
 
-   .projects-us .projects-us__card-container .projects-us__card-list .projects-us__card-item { 
+   .projects-us .projects-us__card-container .projects-us__card-list .projects-us__card-item {
       max-width: 100%
    }
 
-   .footer .flex { 
+   .footer .flex {
       flex-direction: column;
       gap: 15px;
    }
 
-   .contacts { 
+   .contacts {
       padding: 10px 15px;
+   }
+
+   .price {
+      padding: 30px 15px;
+   }
+
+   tbody tr {
+      gap: 5px;
    }
 }
